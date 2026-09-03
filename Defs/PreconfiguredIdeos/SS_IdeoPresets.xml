@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <IdeoPresetDef MayRequire="Ludeon.RimWorld.Ideology">
+    <defName>SS_VeiledCreed</defName>
+    <label>the veiled creed</label>
+    <description>Light is a wound in the world. Darkness is shelter, flesh is memory, and every death leaves something behind to be consumed.</description>
+    <categoryDef MayRequire="Ludeon.RimWorld.Ideology">Strong</categoryDef>
+    <memes>
+      <li>Darkness</li>
+      <li>Cannibal</li>
+    </memes>
+  </IdeoPresetDef>
+
+</Defs>
