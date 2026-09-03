@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <BiomeDef ParentName="TemperateForest">
+    <defName>SS_Rift</defName>
+    <label>rift</label>
+    <description>A barren, eerie rift of polluted crust, sparse fungus, and heavy darkness. Almost no light reaches the ground, and the fog makes every distant shape uncertain.</description>
+    <workerClass>BiomeWorker_Desert</workerClass>
+    <animalDensity>0.55</animalDensity>
+    <plantDensity>0.12</plantDensity>
+    <settlementSelectionWeight>0.7</settlementSelectionWeight>
+    <movementDifficulty>1.05</movementDifficulty>
+    <texture>World/Biomes/TemperateForest</texture>
+    <wildPlantRegrowDays>24</wildPlantRegrowDays>
+    <baseWeatherCommonalities>
+      <Clear>0.2</Clear>
+      <Fog>1</Fog>
+      <SS_RiftMist>20</SS_RiftMist>
+      <FoggyRain>2</FoggyRain>
+      <RainyThunderstorm>0.4</RainyThunderstorm>
+      <GrayPall MayRequire="Ludeon.RimWorld.Anomaly">2</GrayPall>
+    </baseWeatherCommonalities>
+    <terrainsByFertility>
+      <li>
+        <terrain>SS_RiftCrust</terrain>
+        <min>-999</min>
+        <max>0.38</max>
+      </li>
+      <li>
+        <terrain>SS_RiftMoss</terrain>
+        <min>0.38</min>
+        <max>0.86</max>
+      </li>
+      <li>
+        <terrain>SoilRich</terrain>
+        <min>0.86</min>
+        <max>999</max>
+      </li>
+    </terrainsByFertility>
+    <terrainPatchMakers>
+      <li>
+        <perlinFrequency>0.018</perlinFrequency>
+        <isPond>true</isPond>
+        <thresholds>
+          <li>
+            <terrain>SS_RiftMoss</terrain>
+            <min>0.68</min>
+            <max>0.78</max>
+          </li>
+          <li>
+            <terrain>MarshyTerrain</terrain>
+            <min>0.78</min>
+            <max>0.91</max>
+          </li>
+          <li>
+            <terrain>WaterShallow</terrain>
+            <min>0.91</min>
+            <max>999</max>
+          </li>
+        </thresholds>
+      </li>
+    </terrainPatchMakers>
+    <wildPlants>
+      <SS_RiftGlowcap>1.2</SS_RiftGlowcap>
+      <SS_ShadowFungus>0.9</SS_ShadowFungus>
+      <SS_UmbralMoss>1.6</SS_UmbralMoss>
+      <SS_Gloomroot>1.2</SS_Gloomroot>
+      <SS_UmbralReed>0.8</SS_UmbralReed>
+      <SS_DreadBloom>0.4</SS_DreadBloom>
+      <SS_Shadowcap>0.6</SS_Shadowcap>
+      <SS_Bleakvine>0.5</SS_Bleakvine>
+      <SS_RiftThorn>0.3</SS_RiftThorn>
+      <Plant_Grass>0.3</Plant_Grass>
+      <Plant_Bush>0.08</Plant_Bush>
+      <Plant_TreeOak>0.04</Plant_TreeOak>
+      <Plant_TreePine>0.04</Plant_TreePine>
+      <Plant_HealrootWild>0.02</Plant_HealrootWild>
+    </wildPlants>
+    <wildAnimals>
+      <Rat>1.2</Rat>
+      <Hare>0.9</Hare>
+      <Raccoon>0.7</Raccoon>
+      <Fox_Red>0.18</Fox_Red>
+      <Panther>0.12</Panther>
+      <Warg>0.05</Warg>
+      <Megasloth>0.16</Megasloth>
+      <WildBoar>0.35</WildBoar>
+      <Muffalo>0.25</Muffalo>
+    </wildAnimals>
+  </BiomeDef>
+
+</Defs>
