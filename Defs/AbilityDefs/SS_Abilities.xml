@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <AbilityDef ParentName="EntitySkip">
+    <defName>SS_Teleport</defName>
+    <label>teleport</label>
+    <description>Slip through the dark and reappear at a nearby position.</description>
+    <showOnCharacterCard>true</showOnCharacterCard>
+    <cooldownTicksRange>3600~7200</cooldownTicksRange>
+    <verbProperties>
+      <range>24.9</range>
+    </verbProperties>
+    <comps>
+      <li Class="SightstealerColony.CompProperties_SSTeleport">
+        <compClass>SightstealerColony.CompAbilityEffect_SSTeleport</compClass>
+        <destination>Selected</destination>
+        <requiresLineOfSight>true</requiresLineOfSight>
+        <range>24.9</range>
+        <clamorType>Ability</clamorType>
+        <clamorRadius>4</clamorRadius>
+        <destClamorType>Ability</destClamorType>
+        <destClamorRadius>4</destClamorRadius>
+        <maxBodySize>10</maxBodySize>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <AbilityDef>
+    <defName>SS_InhumanScreech</defName>
+    <label>inhuman screech</label>
+    <description>Release a psychic shriek that sends nearby animals and other non-Sightstealers fleeing. Some victims collapse into a psychic coma.</description>
+    <iconPath>UI/Commands/WarTrumpet</iconPath>
+    <cooldownTicksRange>3600~5400</cooldownTicksRange>
+    <targetRequired>false</targetRequired>
+    <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>0</range>
+      <warmupTime>0.5</warmupTime>
+      <requireLineOfSight>false</requireLineOfSight>
+      <targetParams>
+        <canTargetSelf>true</canTargetSelf>
+      </targetParams>
+    </verbProperties>
+    <statBases>
+      <Ability_EffectRadius>10</Ability_EffectRadius>
+    </statBases>
+    <comps>
+      <li Class="SightstealerColony.CompProperties_InhumanScreech" />
+    </comps>
+  </AbilityDef>
+
+  <AbilityDef>
+    <defName>SS_OfferSacrifice</defName>
+    <label>offer sacrifice</label>
+    <description>The old direct offering ability is retained only so older saves can load. Use The Veiled Offering psychic ritual.</description>
+    <iconPath>UI/Abilities/VoidTerror</iconPath>
+    <cooldownTicksRange>12000~18000</cooldownTicksRange>
+    <targetRequired>true</targetRequired>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>4.9</range>
+      <warmupTime>1</warmupTime>
+      <requireLineOfSight>false</requireLineOfSight>
+      <targetParams>
+        <canTargetPawns>true</canTargetPawns>
+        <canTargetHumans>true</canTargetHumans>
+        <canTargetAnimals>false</canTargetAnimals>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="SightstealerColony.CompProperties_Sacrifice" />
+    </comps>
+  </AbilityDef>
+
+</Defs>
