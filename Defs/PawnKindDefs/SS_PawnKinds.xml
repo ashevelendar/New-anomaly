@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-  <ThingDef ParentName="Human">
+  <!-- Playable colony race derived from the vanilla Anomaly Sightstealer. This keeps the real Sightstealer body/rendering instead of using a human pawn with a xenotype. -->
+  <ThingDef ParentName="Sightstealer">
     <defName>SS_Sightstealer</defName>
     <label>sightstealer</label>
     <hiddenWhileUndiscovered>false</hiddenWhileUndiscovered>
