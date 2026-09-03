@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <FurDef>
+    <defName>SS_SightstealerBodyFur</defName>
+    <noGraphic>true</noGraphic>
+    <bodyTypeGraphicPaths>
+      <Male>Things/Pawn/Sightstealer/Sightstealer_A</Male>
+      <Female>Things/Pawn/Sightstealer/Sightstealer_A</Female>
+      <Hulk>Things/Pawn/Sightstealer/Sightstealer_A</Hulk>
+      <Fat>Things/Pawn/Sightstealer/Sightstealer_A</Fat>
+      <Thin>Things/Pawn/Sightstealer/Sightstealer_A</Thin>
+      <Child>Things/Pawn/Sightstealer/Sightstealer_A</Child>
+      <Baby>Things/Pawn/Sightstealer/Sightstealer_A</Baby>
+    </bodyTypeGraphicPaths>
+  </FurDef>
+
+</Defs>
