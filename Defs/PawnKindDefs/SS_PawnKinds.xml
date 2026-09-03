@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef ParentName="Human">
+    <defName>SS_Sightstealer</defName>
+    <label>sightstealer</label>
+    <hiddenWhileUndiscovered>false</hiddenWhileUndiscovered>
+    <race>
+      <thinkTreeMain>Humanlike</thinkTreeMain>
+      <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+      <foodType>Corpse,Meat</foodType>
+      <disableMating>true</disableMating>
+    </race>
+  </ThingDef>
+
+  <PawnKindDef ParentName="SightstealerKind">
+    <defName>SS_Colonist</defName>
+    <label>sightstealer colonist</label>
+    <race>SS_Sightstealer</race>
+    <defaultFactionDef>PlayerColony</defaultFactionDef>
+    <immuneToGameConditionEffects>false</immuneToGameConditionEffects>
+    <immuneToTraps>false</immuneToTraps>
+    <overrideDebugActionCategory>Humanlike</overrideDebugActionCategory>
+    <abilities>
+      <li>SS_Teleport</li>
+      <li>SS_InhumanScreech</li>
+    </abilities>
+    <apparelTags>
+      <li>IndustrialBasic</li>
+    </apparelTags>
+    <apparelAllowHeadgearChance>0.15</apparelAllowHeadgearChance>
+    <apparelMoney>350~600</apparelMoney>
+    <backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+    <techHediffsChance>0.03</techHediffsChance>
+    <techHediffsMoney>50~800</techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+      <li>Simple</li>
+      <li>ImplantEmpireCommon</li>
+    </techHediffsTags>
+    <initialResistanceRange>0~0</initialResistanceRange>
+  </PawnKindDef>
+
+</Defs>
