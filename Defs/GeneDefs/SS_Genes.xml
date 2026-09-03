@@ -54,7 +54,6 @@
     <displayCategory>Cosmetic_Body</displayCategory>
     <displayOrderInCategory>500</displayOrderInCategory>
     <selectionWeight>1</selectionWeight>
-    <furDef>SS_SightstealerBodyFur</furDef>
   </GeneDef>
 
 </Defs>
