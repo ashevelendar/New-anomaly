@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <GeneDef>
+    <defName>SS_SightstealerPhysiology</defName>
+    <label>sightstealer physiology</label>
+    <labelShortAdj>sightstealer</labelShortAdj>
+    <description>Sightstealer physiology reduces physical manipulation and anchors the darkness-adapted light response.</description>
+    <iconPath>UI/Icons/Genes/Gene_MildUVSensitivity</iconPath>
+    <geneClass>SightstealerColony.Gene_SightstealerPhysiology</geneClass>
+    <displayCategory>ResistanceAndWeakness</displayCategory>
+    <displayOrderInCategory>510</displayOrderInCategory>
+    <selectionWeight>1</selectionWeight>
+    <capMods>
+      <li>
+        <capacity>Manipulation</capacity>
+        <postFactor>0.75</postFactor>
+      </li>
+    </capMods>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>1</biostatMet>
+    <damageFactors>
+      <Flame>4</Flame>
+    </damageFactors>
+    <statFactors>
+      <Flammability>2</Flammability>
+    </statFactors>
+    <abilities>
+      <li>SS_Teleport</li>
+      <li>SS_InhumanScreech</li>
+    </abilities>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>SS_UmbralForm</defName>
+    <label>umbral form</label>
+    <labelShortAdj>umbral</labelShortAdj>
+    <description>In deep darkness, carriers can bend perception and fade from the awareness of nearby observers. Attacking or taking damage reveals them briefly.</description>
+    <iconPath>UI/Icons/Genes/Gene_Darkvision</iconPath>
+    <geneClass>SightstealerColony.Gene_UmbralForm</geneClass>
+    <displayCategory>ResistanceAndWeakness</displayCategory>
+    <displayOrderInCategory>520</displayOrderInCategory>
+    <selectionWeight>1</selectionWeight>
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>1</biostatMet>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>SS_SightstealerBody</defName>
+    <label>sightstealer body</label>
+    <labelShortAdj>sightstealer-bodied</labelShortAdj>
+    <description>Marks a carrier as having the Anomaly Sightstealer body. The colony pawn kind supplies the exact Anomaly body graphic.</description>
+    <iconPath>UI/Icons/Genes/Gene_BodyThin</iconPath>
+    <displayCategory>Cosmetic_Body</displayCategory>
+    <displayOrderInCategory>500</displayOrderInCategory>
+    <selectionWeight>1</selectionWeight>
+    <furDef>SS_SightstealerBodyFur</furDef>
+  </GeneDef>
+
+</Defs>
