@@ -112,8 +112,13 @@
         <label>weakened</label>
         <statFactors>
           <MoveSpeed>0.8</MoveSpeed>
-          <Manipulation>0.8</Manipulation>
         </statFactors>
+        <capMods>
+          <li>
+            <capacity>Manipulation</capacity>
+            <postFactor>0.8</postFactor>
+          </li>
+        </capMods>
       </li>
     </stages>
     <comps>
@@ -134,8 +139,13 @@
         <label>exceptional</label>
         <statFactors>
           <MoveSpeed>1.1</MoveSpeed>
-          <Manipulation>1.1</Manipulation>
         </statFactors>
+        <capMods>
+          <li>
+            <capacity>Manipulation</capacity>
+            <postFactor>1.1</postFactor>
+          </li>
+        </capMods>
       </li>
     </stages>
     <comps>
