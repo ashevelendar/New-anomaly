@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
   <Operation Class="PatchOperationAdd">
-    <xpath>Defs/ThoughtDef[defName="SS_AteCorpse"]/stages/li</xpath>
+    <xpath>/Defs/ThoughtDef[defName="AteCorpse" or defName="ButcheredHumanlikeCorpse" or defName="KnowButcheredHumanlikeCorpse" or defName="ButcheredHumanlikeCorpseOpinion" or defName="ObservedLayingCorpse" or defName="ObservedLayingRottingCorpse"]</xpath>
     <value>
-      <description>The memory of a successful feeding is strangely comforting.</description>
-      <baseMoodEffect>3</baseMoodEffect>
+      <nullifyingGenes>
+        <li>SS_SightstealerPhysiology</li>
+      </nullifyingGenes>
     </value>
   </Operation>
 </Patch>
