@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef ParentName="ResourceBase"><defName>SS_TwistedFibre</defName><label>twisted fibre</label><description>Dark, fibrous growth harvested from Rift plants. It is rough to work with, but surprisingly resilient.</description><graphicData><texPath>Things/Item/Resource/Devilstrand</texPath><graphicClass>Graphic_Single</graphicClass></graphicData><statBases><MaxHitPoints>60</MaxHitPoints><MarketValue>1.2</MarketValue><Mass>0.03</Mass><Flammability>0.8</Flammability></statBases><thingCategories><li>ResourcesRaw</li></thingCategories></ThingDef>
+
+  <ThingDef ParentName="ResourceBase"><defName>SS_ShadowResin</defName><label>shadow resin</label><description>A dense, tar-like resin that forms inside old Rift growth. It holds heat poorly and seems to drink in nearby light.</description><graphicData><texPath>Things/Item/Resource/Chemfuel</texPath><graphicClass>Graphic_Single</graphicClass></graphicData><statBases><MaxHitPoints>60</MaxHitPoints><MarketValue>2.4</MarketValue><Mass>0.04</Mass><Flammability>1.2</Flammability></statBases><thingCategories><li>ResourcesRaw</li></thingCategories></ThingDef>
+
+  <ThingDef ParentName="ResourceBase"><defName>SS_UmbralShard</defName><label>umbral shard</label><description>A glassy fragment of condensed darkness. It is cold to the touch and faintly luminous at the edges.</description><graphicData><texPath>Things/Item/Resource/Plasteel</texPath><graphicClass>Graphic_Single</graphicClass></graphicData><statBases><MaxHitPoints>80</MaxHitPoints><MarketValue>6.0</MarketValue><Mass>0.02</Mass><Flammability>0</Flammability></statBases><thingCategories><li>ResourcesRaw</li></thingCategories></ThingDef>
+
+  <ThingDef ParentName="ResourceBase"><defName>SS_DreadPetals</defName><label>dread petals</label><description>Dry petals from a Dread Bloom. Their scent is faint, metallic, and difficult to forget.</description><graphicData><texPath>Things/Item/Resource/Devilstrand</texPath><graphicClass>Graphic_Single</graphicClass></graphicData><statBases><MaxHitPoints>40</MaxHitPoints><MarketValue>3.5</MarketValue><Mass>0.01</Mass><Flammability>0.7</Flammability></statBases><thingCategories><li>ResourcesRaw</li></thingCategories></ThingDef>
+
+  <ThingDef ParentName="ResourceBase"><defName>SS_VoidSap</defName><label>void sap</label><description>A viscous secretion gathered from Shadowcaps. It remains liquid-like even after it has been removed from the plant.</description><graphicData><texPath>Things/Item/Resource/Chemfuel</texPath><graphicClass>Graphic_Single</graphicClass></graphicData><statBases><MaxHitPoints>50</MaxHitPoints><MarketValue>4.0</MarketValue><Mass>0.03</Mass><Flammability>0.9</Flammability></statBases><thingCategories><li>ResourcesRaw</li></thingCategories></ThingDef>
+
+</Defs>
