@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ScenPartDef>
+    <defName>SS_ForceRiftBiome</defName>
+    <label>Rift biome</label>
+    <category>Fixed</category>
+    <scenPartClass>SightstealerColony.ScenPart_ForceRiftBiome</scenPartClass>
+    <selectionWeight>0</selectionWeight>
+    <summaryPriority>900</summaryPriority>
+    <canBeRandomlyAdded>false</canBeRandomlyAdded>
+    <canBePlayerAddedRemoved>false</canBePlayerAddedRemoved>
+  </ScenPartDef>
+
+  <ScenarioDef ParentName="ScenarioBase">
+    <defName>SS_SightstealerColony</defName>
+    <label>The Sightstealer Colony</label>
+    <description>You have left the bright worlds behind. Three Sightstealers land in a dim, unfamiliar valley where the shadows feel almost welcoming. Build a home in the dark, use light carefully, and make the Rift your shelter.</description>
+    <scenario>
+      <summary>Three Sightstealers begin a normal colony in a dim Rift.</summary>
+      <parts>
+        <li Class="SightstealerColony.ScenPart_ForceRiftBiome">
+          <def>SS_ForceRiftBiome</def>
+          <visible>false</visible>
+        </li>
+        <li Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes">
+          <def>ConfigurePawnsXenotypes</def>
+          <pawnChoiceCount>8</pawnChoiceCount>
+          <customSummary>Start with three adult or child Sightstealers.</customSummary>
+          <overrideKinds>
+            <li><xenotype>SS_Sightstealer</xenotype><pawnKind>SS_Colonist</pawnKind></li>
+          </overrideKinds>
+          <xenotypeCounts>
+            <li><xenotype>SS_Sightstealer</xenotype><count>3</count><description>non-baby Sightstealers</description><requiredAtStart>true</requiredAtStart><allowedDevelopmentalStages>Adult, Child</allowedDevelopmentalStages></li>
+          </xenotypeCounts>
+        </li>
+        <li Class="ScenPart_PlayerPawnsArriveMethod"><def>PlayerPawnsArriveMethod</def><method>Standing</method><visible>false</visible></li>
+        <li Class="ScenPart_StartingThing_Defined"><def>StartingThing_Defined</def><thingDef>Silver</thingDef><count>500</count></li>
+        <li Class="ScenPart_StartingThing_Defined"><def>StartingThing_Defined</def><thingDef>Meat_Twisted</thingDef><count>40</count></li>
+        <li Class="ScenPart_StartingThing_Defined"><def>StartingThing_Defined</def><thingDef>MedicineIndustrial</thingDef><count>20</count></li>
+        <li Class="ScenPart_StartingThing_Defined"><def>StartingThing_Defined</def><thingDef>ComponentIndustrial</thingDef><count>20</count></li>
+        <li Class="ScenPart_StartingThing_Defined"><def>StartingThing_Defined</def><thingDef>Steel</thingDef><count>300</count></li>
+        <li Class="ScenPart_StartingThing_Defined"><def>StartingThing_Defined</def><thingDef>WoodLog</thingDef><count>300</count></li>
+        <li Class="ScenPart_StartingThing_Defined"><def>StartingThing_Defined</def><thingDef>Bedroll</thingDef><stuff>Cloth</stuff><count>3</count></li>
+        <li Class="ScenPart_StartingThing_Defined"><def>StartingThing_Defined</def><thingDef>Gun_BoltActionRifle</thingDef></li>
+        <li Class="ScenPart_StartingThing_Defined"><def>StartingThing_Defined</def><thingDef>Gun_Revolver</thingDef></li>
+        <li Class="ScenPart_StartingThing_Defined"><def>StartingThing_Defined</def><thingDef>MeleeWeapon_Knife</thingDef><stuff>Steel</stuff></li>
+      </parts>
+    </scenario>
+  </ScenarioDef>
+
+</Defs>
