@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <BiomeDef>
+    <defName>SS_Rift</defName>
+    <label>rift</label>
+    <description>A hostile anomaly-tainted biome.</description>
+  </BiomeDef>
+
+</Defs>
