@@ -82,7 +82,6 @@ namespace SightstealerColony
                 TryPatchFoodMethod(harmony, typeof(Thing), typeof(SightstealerFoodThingPatch));
                 TryPatchFoodMethod(harmony, typeof(ThingDef), typeof(SightstealerFoodDefPatch));
                 TryPatch(harmony, typeof(Thing), "Ingested", new[] { typeof(Pawn), typeof(float) }, typeof(SightstealerForcedFoodPatch));
-                TryPatch(harmony, typeof(PawnRenderNode_Body), "GraphicFor", new[] { typeof(Pawn) }, typeof(SightstealerBodyPatch));
             }
             catch (Exception ex)
             {
@@ -120,15 +119,6 @@ namespace SightstealerColony
             if (SightstealerUtility.IsSightstealer(p)) __result = IsAllowedFood(food);
         }
         public static bool IsAllowedFood(Thing food) => food is Corpse || (food != null && food.def != null && food.def.defName == "Meat_Twisted");
-    }
-
-    public static class SightstealerBodyPatch
-    {
-        public static void Postfix(ref Graphic __result, PawnRenderNode_Body __instance, Pawn pawn)
-        {
-            if (pawn != null && __instance.GetType() == typeof(PawnRenderNode_Body) && SightstealerUtility.IsSightstealer(pawn))
-                __result = null;
-        }
     }
 
     public static class SightstealerFoodDefPatch
