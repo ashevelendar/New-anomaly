@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
-  <PawnKindDef ParentName="Colonist">
+  <PawnKindDef ParentName="BasePlayerPawnKind">
     <defName>SS_Colonist</defName>
     <label>sightstealer colonist</label>
     <race>SS_Sightstealer</race>
+    <defaultFactionType>PlayerColony</defaultFactionType>
+    <initialResistanceRange>13~21</initialResistanceRange>
+    <initialWillRange>0~0</initialWillRange>
     <combatPower>70</combatPower>
     <lifeStages>
       <li>
@@ -32,5 +34,4 @@
       </li>
     </alternateGraphics>
   </PawnKindDef>
-
 </Defs>
