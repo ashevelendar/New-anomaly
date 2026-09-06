@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef ParentName="Sightstealer">
+    <defName>SS_Sightstealer</defName>
+    <label>sightstealer</label>
+    <description>A playable Sightstealer adapted to colony life. It retains the physical form of the Anomaly Sightstealer while using humanlike intelligence and colony behaviour.</description>
+    <race>
+      <thinkTreeMain>Humanlike</thinkTreeMain>
+      <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+      <intelligence>Humanlike</intelligence>
+    </race>
+  </ThingDef>
+
+</Defs>
