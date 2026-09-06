@@ -6,8 +6,6 @@
     <label>sightstealer colonist</label>
     <race>SS_Sightstealer</race>
     <combatPower>70</combatPower>
-    <minGenerationAge>18</minGenerationAge>
-    <maxGenerationAge>1000</maxGenerationAge>
     <lifeStages>
       <li>
         <bodyGraphicData>
