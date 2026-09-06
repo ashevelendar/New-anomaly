@@ -16,7 +16,6 @@ The Rift is a natural home for them: a dim, damp place where lamps are tools and
       <li>SS_SightstealerPhysiology</li>
       <li>DarkVision</li>
       <li>SS_UmbralForm</li>
-      <li>SS_SightstealerBody</li>
     </genes>
     <modExtensions>
       <li Class="SightstealerColony.SightstealerConfigExtension">
