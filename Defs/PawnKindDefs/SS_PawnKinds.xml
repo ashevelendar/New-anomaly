@@ -1,5 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
+  <PawnKindDef ParentName="Colonist">
+    <defName>SS_Colonist</defName>
+    <label>sightstealer colonist</label>
+    <race>SS_Sightstealer</race>
+    <combatPower>70</combatPower>
+    <minGenerationAge>18</minGenerationAge>
+    <maxGenerationAge>1000</maxGenerationAge>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Sightstealer/Sightstealer_A</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.7</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Sightstealer/Dessicated_Sightstealer</texPath>
+          <drawSize>1.7</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+    <alternateGraphicChance>0.75</alternateGraphicChance>
+    <alternateGraphics>
+      <li>
+        <texPath>Things/Pawn/Sightstealer/Sightstealer_B</texPath>
+      </li>
+      <li>
+        <texPath>Things/Pawn/Sightstealer/Sightstealer_C</texPath>
+      </li>
+      <li>
+        <texPath>Things/Pawn/Sightstealer/Sightstealer_D</texPath>
+      </li>
+    </alternateGraphics>
+  </PawnKindDef>
 
 </Defs>
