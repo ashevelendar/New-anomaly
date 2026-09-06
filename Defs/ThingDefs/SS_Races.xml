@@ -1,15 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
-  <ThingDef ParentName="Sightstealer">
+  <ThingDef ParentName="BasePawn">
     <defName>SS_Sightstealer</defName>
     <label>sightstealer</label>
     <description>A playable Sightstealer adapted to colony life. It retains the physical form of the Anomaly Sightstealer while using humanlike intelligence and colony behaviour.</description>
+    <thingClass>Pawn</thingClass>
+    <category>Pawn</category>
+    <selectable>true</selectable>
     <race>
       <thinkTreeMain>Humanlike</thinkTreeMain>
       <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+      <renderTree>Misc</renderTree>
+      <body>Human</body>
       <intelligence>Humanlike</intelligence>
+      <needsRest>true</needsRest>
+      <bloodDef>Filth_DarkBlood</bloodDef>
+      <fleshType>EntityFlesh</fleshType>
+      <isImmuneToInfections>true</isImmuneToInfections>
+      <specificMeatDef>Meat_Twisted</specificMeatDef>
+      <leatherDef>Leather_Dread</leatherDef>
+      <hasGenders>false</hasGenders>
+      <foodType>None</foodType>
     </race>
+    <statBases>
+      <Mass>48</Mass>
+      <Flammability>0.7</Flammability>
+      <MoveSpeed>4.83</MoveSpeed>
+      <ComfyTemperatureMin>-40</ComfyTemperatureMin>
+      <ComfyTemperatureMax>60</ComfyTemperatureMax>
+      <PsychicSensitivity>2</PsychicSensitivity>
+    </statBases>
   </ThingDef>
-
 </Defs>
