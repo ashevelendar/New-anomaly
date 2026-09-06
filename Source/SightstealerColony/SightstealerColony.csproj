@@ -39,5 +39,6 @@
     <Compile Include="HediffComps.cs" />
     <Compile Include="Abilities.cs" />
     <Compile Include="Rituals.cs" />
+    <Compile Include="PawnGenerationPatches.cs" />
   </ItemGroup>
 </Project>
