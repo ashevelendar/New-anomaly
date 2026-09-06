@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <XenotypeDef>
+    <defName>SS_Sightstealer</defName>
+    <label>sightstealer colony</label>
+    <description>Sightstealers are humanlike beings whose bodies thrive in low light. Darkness brings rapid recovery and lets them slip from the awareness of other pawns, but bright light slows them and suppresses that advantage. Their hands remain capable of ordinary work, though their unusual physiology makes manipulation noticeably less precise.
+
+The Rift is a natural home for them: a dim, damp place where lamps are tools and darkness is shelter.</description>
+    <descriptionShort>Humanlike darkness-adapted people who regenerate and become psychically invisible in deep darkness, but suffer movement and healing penalties in bright light.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/Dirtmole</iconPath>
+    <displayPriority>850</displayPriority>
+    <factionlessGenerationWeight>0</factionlessGenerationWeight>
+    <inheritable>true</inheritable>
+    <genes>
+      <li>SS_SightstealerPhysiology</li>
+      <li>DarkVision</li>
+      <li>SS_UmbralForm</li>
+      <li>SS_SightstealerBody</li>
+    </genes>
+    <modExtensions>
+      <li Class="SightstealerColony.SightstealerConfigExtension">
+        <brightGlowThreshold>0.5</brightGlowThreshold>
+        <veryBrightGlowThreshold>0.8</veryBrightGlowThreshold>
+        <darkGlowThreshold>0.3</darkGlowThreshold>
+        <deepDarkGlowThreshold>0.15</deepDarkGlowThreshold>
+        <lightCheckIntervalTicks>30</lightCheckIntervalTicks>
+        <invisibilityCheckIntervalTicks>30</invisibilityCheckIntervalTicks>
+        <darkHealingPerDay>4</darkHealingPerDay>
+        <deepDarkHealingPerDay>12</deepDarkHealingPerDay>
+        <revealDurationTicks>180</revealDurationTicks>
+      </li>
+    </modExtensions>
+  </XenotypeDef>
+
+</Defs>
